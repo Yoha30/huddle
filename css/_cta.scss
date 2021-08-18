@@ -1,0 +1,31 @@
+@import "variables";
+
+.cta {
+  position: relative;
+  z-index: 2;
+  margin: 2rem 1.25rem;
+  margin-top: 0;
+  transform: translateY(5.5rem);
+  border-radius: 1rem;
+  padding: 0;
+  overflow: hidden;
+  max-width: 800px;
+  @media screen and (min-width: $desktop-breakpoint) {
+    transform: translateY(6.5rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 {
+    font-size: clamp(1rem, 4.5vw, 2rem);
+    margin-bottom: 1.5rem;
+  }
+}
+.cta__container {
+  padding: 2rem 0;
+  padding-left: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  height: 100%;
+}
